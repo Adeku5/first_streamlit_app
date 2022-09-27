@@ -2,6 +2,6 @@ import streamlit
 
 streamlit.header  ('Breakfast Menu')
 
---streamlit.header('Best buy')
-streamlit.text ('Line 1')
-streamlit.text('Line 2')
+streamlit.text ('Omega 3 & Blueberry Oatmeal')
+streamlit.text ('Kale, Spinach & Rocjet Smoothie')
+streamlit.text ('Hard Boiled Free-Range Egg')
