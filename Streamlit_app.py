@@ -29,9 +29,9 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 #dataframe shows only selected fruit
 
-#dreate the repeatable code block (the function)
+#create the repeatable code block (the function)
 def get_fruityvice_data(this_fruit_choice):
-      fruityvice_response = requests.get("https://fruityvice.com/api/fruit" + fruit_choice)                
+      fruityvice_response = requests.get("https://fruityvice.com/api/fruit" + this_fruit_choice)                
       fruityvice_normalized = pandas.json_normalize(fruityvice_response.json()) 
       return fruityvice_normalized
 
@@ -59,6 +59,8 @@ streamlit.stop()
 #take the json version of the response and normalize it
 
 #output it to the screen as a table
+
+
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
