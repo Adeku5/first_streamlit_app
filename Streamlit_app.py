@@ -76,7 +76,7 @@ def get_fruit_load_list():
         my_data_rows = get_fruit_load_list()
         streamlit.dataframe(my_data_rows)
         
- streamlit.stop()      
+        streamlit.stop()      
 
 #fruit_choice = streamlit.text_input('What fruit would you like toadd?','jackfruit')
 
