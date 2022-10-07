@@ -25,6 +25,11 @@ streamlit.dataframe(fruits_to_show)
 #dataframe shows only selected fruit
 
 
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
+
+
 ##my_fruit_list = my_fruit_list.set_index('Fruit')
 
 
