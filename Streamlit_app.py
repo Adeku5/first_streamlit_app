@@ -52,7 +52,13 @@ streamlit.dataframe(my_data_rows)
 #streamlit.text('Thanks for adding jackfruit')
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+streamlit.write('Thanks for adding ', add_my_fruit)
+
+#my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+
+
+
+
 ##my_fruit_list = my_fruit_list.set_index('Fruit')
 
 
