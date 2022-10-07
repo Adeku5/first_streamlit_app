@@ -30,7 +30,7 @@ streamlit.dataframe(fruits_to_show)
 #dataframe shows only selected fruit
 
 streamlit.header('Fruityvice Fruit Advice!')
-fruit_choice = streamlit.text_input('What fruit would you like more information about?,'kiwi')
+fruit_choice = streamlit.text_input('What fruit would you like more information about?','kiwi')
 streamlit.write('The user entered,fruit_choice)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit" + fruity_choice)                
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())                
