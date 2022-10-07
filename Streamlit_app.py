@@ -49,7 +49,7 @@ try:
 except URLError as e:
       streamlit.error()    
     
-
+streamlit.stop()    
     
   #streamlit.write('The user entered ', fruit_choice)
 
@@ -71,7 +71,7 @@ streamlit.text(my_data_row)
 
 
    
- streamlit.stop()      
+  
 
 #fruit_choice = streamlit.text_input('What fruit would you like toadd?','jackfruit')
 
